@@ -1,0 +1,264 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.65;
+  color: #2c3e50;
+  background: #fafbfc;
+  transition: all 0.4s ease;
+}
+
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+header {
+  text-align: center;
+  padding-top: 3.5rem;
+  padding-bottom: 1.5rem;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #2c3e50;
+  letter-spacing: -0.01em;
+}
+
+.contact {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.2rem;
+  font-size: 0.95rem;
+}
+
+.contact a {
+  color: #3498db;
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.contact a:hover {
+  background: rgba(52, 152, 219, 0.1);
+  transform: translateY(-1px);
+}
+
+section {
+  margin-top: 2.8rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: all 0.2s ease;
+}
+
+section:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+  font-size: 1.5rem;
+  border-bottom: 2px solid #e8f4fd;
+  padding-bottom: 0.4rem;
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+.item .right {
+  font-weight: 400;
+  color: #7f8c8d;
+  font-style: italic;
+}
+
+p {
+  margin: 0.6rem 0 0;
+  color: #34495e;
+}
+
+ul,
+ol {
+  margin: 0.6rem 0 0 1.4rem;
+}
+
+li {
+  margin-bottom: 0.3rem;
+  color: #34495e;
+}
+
+footer {
+  text-align: center;
+  margin-top: 3.5rem;
+  padding-top: 2rem;
+  font-size: 0.9rem;
+  color: #95a5a6;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.note {
+  font-style: italic;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+#fancy-toggle {
+  position: fixed;
+  top: 1.2rem;
+  right: 1.2rem;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 0.6rem 0.7rem;
+  border-radius: 50%;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  color: #3498db;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+#fancy-toggle:hover {
+  transform: rotate(15deg) scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Fancy Mode - 清新主题 */
+body.fancy {
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  color: #2c3e50;
+}
+
+body.fancy .container {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+body.fancy header h1 {
+  color: #2c3e50;
+  text-shadow: 0 2px 4px rgba(255, 255, 255, 0.8);
+}
+
+body.fancy .contact a {
+  color: #e74c3c;
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(231, 76, 60, 0.3);
+}
+
+body.fancy .contact a:hover {
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 2px 8px rgba(231, 76, 60, 0.3);
+}
+
+body.fancy section {
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(15px);
+}
+
+body.fancy section:hover {
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+body.fancy section h2 {
+  color: #e74c3c;
+  border-bottom-color: rgba(231, 76, 60, 0.3);
+}
+
+body.fancy .item .right {
+  color: #7f8c8d;
+}
+
+body.fancy p,
+body.fancy li {
+  color: #2c3e50;
+}
+
+body.fancy footer {
+  color: #7f8c8d;
+  border-top-color: rgba(255, 255, 255, 0.3);
+}
+
+body.fancy a {
+  color: #e74c3c;
+}
+
+body.fancy a:hover {
+  color: #c0392b;
+}
+
+body.fancy #fancy-toggle {
+  background: rgba(255, 255, 255, 0.8);
+  color: #e74c3c;
+  box-shadow: 0 3px 15px rgba(231, 76, 60, 0.3);
+}
+
+body.fancy #fancy-toggle:hover {
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 5px 20px rgba(231, 76, 60, 0.4);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .container {
+    padding: 1.5rem 1rem;
+  }
+  
+  header {
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
+  }
+  
+  header h1 {
+    font-size: 2.2rem;
+  }
+  
+  .contact {
+    gap: 0.8rem;
+  }
+  
+  section {
+    padding: 1.2rem;
+    margin-top: 2rem;
+  }
+  
+  section h2 {
+    font-size: 1.3rem;
+  }
+  
+  .item {
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+  
+  #fancy-toggle {
+    top: 1rem;
+    right: 1rem;
+    padding: 0.5rem 0.6rem;
+    font-size: 1rem;
+  }
+}
